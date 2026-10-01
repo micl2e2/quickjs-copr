@@ -1,10 +1,11 @@
 # Metapackage. Installing it pulls in the binary, devel, and doc packages.
 %global upstream_date 2026-06-04
+%global release_number 1
 %global debug_package %{nil}
 
 Name:           quickjs-full
 Version:        %{upstream_date}
-Release:        2%{?dist}
+Release:        %{release_number}%{?dist}
 Summary:        QuickJS interpreter, libraries, and manual
 
 License:        MIT
@@ -22,8 +23,5 @@ it installs quickjs-bin, quickjs-devel, and quickjs-doc.
 %files
 
 %changelog
-* Thu Sep 24 2026 Packager - 2026.06.04-2
-- Require quickjs-bin, quickjs-devel, and quickjs-doc at this version or newer
-
-* Thu Sep 24 2026 Packager - 2026.06.04-1
-- Metapackage requiring quickjs-bin, quickjs-devel, and quickjs-doc
+* Thu Oct 01 2026 Packager - 2026-06-04-1
+- Restart the release history

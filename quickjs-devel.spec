@@ -1,4 +1,5 @@
 %global upstream_date 2026-06-04
+%global release_number 1
 # Fedora runs %%set_build_flags at the start of %%build, %%check, and
 # %%install. Leave the compiler flags to the QuickJS Makefile.
 %undefine _auto_set_build_flags
@@ -9,7 +10,7 @@
 
 Name:           quickjs-devel
 Version:        %{upstream_date}
-Release:        3%{?dist}
+Release:        %{release_number}%{?dist}
 Summary:        QuickJS headers and libraries
 
 License:        MIT
@@ -48,11 +49,5 @@ EOF
 %{_includedir}/quickjs/quickjs-libc.h
 
 %changelog
-* Thu Sep 24 2026 Packager - 2026.06.04-3
-- Leave both libraries to quickjs-bin
-
-* Thu Sep 24 2026 Packager - 2026.06.04-2
-- Drop libquickjs.a and require quickjs-bin, which owns that file
-
-* Thu Sep 24 2026 Packager - 2026.06.04-1
-- Package the QuickJS headers, static library, and shared library
+* Thu Oct 01 2026 Packager - 2026-06-04-1
+- Restart the release history

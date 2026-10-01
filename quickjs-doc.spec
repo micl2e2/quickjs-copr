@@ -1,11 +1,12 @@
 %global upstream_date 2026-06-04
+%global release_number 1
 # Documentation only. Do not add debuginfo packages.
 %global debug_package %{nil}
 %global _build_id_links none
 
 Name:           quickjs-doc
 Version:        %{upstream_date}
-Release:        2%{?dist}
+Release:        %{release_number}%{?dist}
 Summary:        QuickJS manual
 
 License:        MIT
@@ -56,8 +57,5 @@ grep -q '^\.TH ' doc/quickjs.1
 %{_mandir}/man1/quickjs.1*
 
 %changelog
-* Fri Sep 25 2026 Packager - 2026.06.04-2
-- Install the manual under %%{_docdir}/quickjs and own that directory
-
-* Thu Sep 24 2026 Packager - 2026.06.04-1
-- Package the QuickJS HTML manual, PDF manual, Texinfo source, and man page
+* Thu Oct 01 2026 Packager - 2026-06-04-1
+- Restart the release history

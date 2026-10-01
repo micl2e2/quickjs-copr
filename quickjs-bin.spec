@@ -1,4 +1,5 @@
 %global upstream_date 2026-06-04
+%global release_number 1
 # Fedora runs %%set_build_flags at the start of %%build, %%check, and
 # %%install. Leave the compiler flags to the QuickJS Makefile.
 %undefine _auto_set_build_flags
@@ -8,7 +9,7 @@
 
 Name:           quickjs-bin
 Version:        %{upstream_date}
-Release:        2%{?dist}
+Release:        %{release_number}%{?dist}
 Summary:        QuickJS command-line interpreter and compiler
 
 License:        MIT
@@ -76,8 +77,5 @@ grep -F -q '"%{_libdir}/quickjs"' qjsc.c
 %{_libdir}/libquickjs.so
 
 %changelog
-* Thu Sep 24 2026 Packager - 2026.06.04-2
-- Also package libquickjs.so
-
-* Thu Sep 24 2026 Packager - 2026.06.04-1
-- Package qjs, qjsc, and libquickjs.a
+* Thu Oct 01 2026 Packager - 2026-06-04-1
+- Restart the release history
