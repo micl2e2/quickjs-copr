@@ -1,5 +1,4 @@
 %global upstream_date 2026-06-04
-%global commit 04be246001599f5995fa2f2d8c91a0f198d3f34c
 # Fedora runs %%set_build_flags at the start of %%build, %%check, and
 # %%install. Leave the compiler flags to the QuickJS Makefile.
 %undefine _auto_set_build_flags
@@ -15,7 +14,6 @@ Summary:        QuickJS headers and libraries
 
 License:        MIT
 URL:            https://github.com/micl2e2/quickjs
-# Source0:        https://codeload.github.com/micl2e2/quickjs/tar.gz/%{commit}
 Source0:        quickjs.tar.gz
 
 BuildRequires:  gcc

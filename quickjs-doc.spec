@@ -1,5 +1,4 @@
 %global upstream_date 2026-06-04
-%global commit 04be246001599f5995fa2f2d8c91a0f198d3f34c
 # Documentation only. Do not add debuginfo packages.
 %global debug_package %{nil}
 %global _build_id_links none
@@ -11,7 +10,6 @@ Summary:        QuickJS manual
 
 License:        MIT
 URL:            https://github.com/micl2e2/quickjs
-# Source0:        https://codeload.github.com/micl2e2/quickjs/tar.gz/%{commit}
 Source0:        quickjs.tar.gz
 BuildArch:      noarch
 
