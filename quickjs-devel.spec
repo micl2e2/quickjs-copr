@@ -8,7 +8,7 @@
 %global debug_package %{nil}
 %global _build_id_links none
 
-Name:           quickjs.devel
+Name:           quickjs-devel
 Version:        2026.06.04
 Release:        3%{?dist}
 Summary:        QuickJS headers and libraries
@@ -20,12 +20,12 @@ Source0:        https://codeload.github.com/micl2e2/quickjs/tar.gz/%{commit}
 BuildRequires:  gcc
 BuildRequires:  glibc-devel
 
-# libquickjs.a is owned by quickjs.bin. qjsc looks for it there.
-Requires:       quickjs.bin >= %{version}
+# libquickjs.a is owned by quickjs-bin. qjsc looks for it there.
+Requires:       quickjs-bin >= %{version}
 
 %description
 QuickJS is a small and embeddable JavaScript engine. This package
-contains the public headers. The libraries are provided by quickjs.bin.
+contains the public headers. The libraries are provided by quickjs-bin.
 
 %prep
 # The codeload archive unpacks to quickjs-<full commit>, not %{name}.
@@ -50,10 +50,10 @@ EOF
 
 %changelog
 * Thu Sep 24 2026 Packager - 2026.06.04-3
-- Leave both libraries to quickjs.bin
+- Leave both libraries to quickjs-bin
 
 * Thu Sep 24 2026 Packager - 2026.06.04-2
-- Drop libquickjs.a and require quickjs.bin, which owns that file
+- Drop libquickjs.a and require quickjs-bin, which owns that file
 
 * Thu Sep 24 2026 Packager - 2026.06.04-1
 - Package the QuickJS headers, static library, and shared library

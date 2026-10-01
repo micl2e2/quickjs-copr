@@ -8,7 +8,7 @@
 %global debug_package %{nil}
 %global _build_id_links none
 
-Name:           quickjs.extra
+Name:           quickjs-extra
 Version:        2026.06.04
 Release:        1%{?dist}
 Summary:        WIP
