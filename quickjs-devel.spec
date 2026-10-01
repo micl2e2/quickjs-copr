@@ -15,7 +15,8 @@ Summary:        QuickJS headers and libraries
 
 License:        MIT
 URL:            https://github.com/micl2e2/quickjs
-Source0:        https://codeload.github.com/micl2e2/quickjs/tar.gz/%{commit}
+# Source0:        https://codeload.github.com/micl2e2/quickjs/tar.gz/%{commit}
+Source0:        quickjs.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  glibc-devel

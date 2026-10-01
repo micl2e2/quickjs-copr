@@ -14,7 +14,8 @@ Summary:        QuickJS command-line interpreter and compiler
 
 License:        MIT
 URL:            https://github.com/micl2e2/quickjs
-Source0:        https://codeload.github.com/micl2e2/quickjs/tar.gz/%{commit}
+# Source0:        https://codeload.github.com/micl2e2/quickjs/tar.gz/%{commit}
+Source0:        quickjs.tar.gz
 # qjsc looks up libquickjs.a under $PREFIX/lib.
 Source1:        https://raw.githubusercontent.com/micl2e2/quickjs-copr/27e93be812251563b7195d852078e549cf5ec8b8/quickjs-fc-libdir.patch
 
