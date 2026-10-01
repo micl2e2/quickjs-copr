@@ -1,1 +1,2 @@
-# quickjs-copr
+# quickjs.copr
+Fedora Copr build support for quickjs.
