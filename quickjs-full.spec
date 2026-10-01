@@ -1,8 +1,9 @@
 # Metapackage. Installing it pulls in the binary, devel, and doc packages.
+%global upstream_date 2026-06-04
 %global debug_package %{nil}
 
 Name:           quickjs-full
-Version:        2026.06.04
+Version:        %{upstream_date}
 Release:        2%{?dist}
 Summary:        QuickJS interpreter, libraries, and manual
 

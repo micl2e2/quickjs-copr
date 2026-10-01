@@ -8,7 +8,7 @@
 %global _build_id_links none
 
 Name:           quickjs-extra
-Version:        2026.06.04
+Version:        %{upstream_date}
 Release:        1%{?dist}
 Summary:        WIP
 

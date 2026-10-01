@@ -7,7 +7,7 @@
 %global _build_id_links none
 
 Name:           quickjs-bin
-Version:        2026.06.04
+Version:        %{upstream_date}
 Release:        2%{?dist}
 Summary:        QuickJS command-line interpreter and compiler
 

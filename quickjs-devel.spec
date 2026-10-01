@@ -8,7 +8,7 @@
 %global _build_id_links none
 
 Name:           quickjs-devel
-Version:        2026.06.04
+Version:        %{upstream_date}
 Release:        3%{?dist}
 Summary:        QuickJS headers and libraries
 
