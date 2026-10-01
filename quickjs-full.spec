@@ -1,5 +1,5 @@
 # Metapackage. Installing it pulls in the binary, devel, and doc packages.
-%global upstream_date 2026-06-04
+%global upstream_date 2026.06.04
 %global release_number 1
 %global debug_package %{nil}
 
@@ -23,5 +23,5 @@ it installs quickjs-bin, quickjs-devel, and quickjs-doc.
 %files
 
 %changelog
-* Thu Oct 01 2026 Packager - 2026-06-04-1
+* Thu Oct 01 2026 Packager - 2026.06.04-1
 - Restart the release history

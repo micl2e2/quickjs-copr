@@ -1,4 +1,4 @@
-%global upstream_date 2026-06-04
+%global upstream_date 2026.06.04
 %global release_number 1
 # Documentation only. Do not add debuginfo packages.
 %global debug_package %{nil}
@@ -57,5 +57,5 @@ grep -q '^\.TH ' doc/quickjs.1
 %{_mandir}/man1/quickjs.1*
 
 %changelog
-* Thu Oct 01 2026 Packager - 2026-06-04-1
+* Thu Oct 01 2026 Packager - 2026.06.04-1
 - Restart the release history

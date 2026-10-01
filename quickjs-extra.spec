@@ -1,4 +1,4 @@
-%global upstream_date 2026-06-04
+%global upstream_date 2026.06.04
 %global release_number 1
 # qjsq and extra.Makefile are not in the commit used by the other specs.
 # Fedora runs %%set_build_flags at the start of %%build, %%check, and
@@ -44,5 +44,5 @@ test "$(printf '%s' '[10,20]' | ./qjsq '[1]')" = "20"
 %{_bindir}/qjsq
 
 %changelog
-* Thu Oct 01 2026 Packager - 2026-06-04-1
+* Thu Oct 01 2026 Packager - 2026.06.04-1
 - Restart the release history
