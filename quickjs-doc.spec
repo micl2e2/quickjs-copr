@@ -24,8 +24,10 @@ BuildRequires:  pandoc
 HTML, PDF, Texinfo, and man-page forms of the QuickJS manual.
 
 %prep
-# The codeload archive unpacks to quickjs-<full commit>, not %{name}.
-%setup -q -n quickjs-%{commit}
+# The codeload archive's top directory is quickjs-<commit>.
+# Unpack here without naming that directory.
+%setup -q -c -T
+tar -xzf %{SOURCE0} --strip-components=1
 
 %build
 # A checkout may already contain a manual. Drop it so this build

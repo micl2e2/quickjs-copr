@@ -28,8 +28,10 @@ QuickJS is a small and embeddable JavaScript engine. This package
 contains the public headers. The libraries are provided by quickjs-bin.
 
 %prep
-# The codeload archive unpacks to quickjs-<full commit>, not %{name}.
-%setup -q -n quickjs-%{commit}
+# The codeload archive's top directory is quickjs-<commit>.
+# Unpack here without naming that directory.
+%setup -q -c -T
+tar -xzf %{SOURCE0} --strip-components=1
 
 %build
 

@@ -29,8 +29,10 @@ contains the qjs interpreter, the qjsc compiler, libquickjs.a, and
 libquickjs.so.
 
 %prep
-# The codeload archive unpacks to quickjs-<full commit>, not %{name}.
-%setup -q -n quickjs-%{commit}
+# The codeload archive's top directory is quickjs-<commit>.
+# Unpack here without naming that directory.
+%setup -q -c -T
+tar -xzf %{SOURCE0} --strip-components=1
 if grep -F -q '/lib/quickjs' qjsc.c; then
   git apply -- %{SOURCE1}
 fi
