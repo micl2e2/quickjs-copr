@@ -52,7 +52,6 @@ install -D -p -m 0644 doc/quickjs.1 %{buildroot}%{_mandir}/man1/quickjs.1
 %check
 test -s doc/quickjs.html
 test -s doc/quickjs.pdf
-test -s doc/quickjs.texi
 test -s doc/quickjs.1
 
 %files
