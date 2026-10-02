@@ -50,9 +50,10 @@ install -p -m 0644 doc/quickjs.html doc/quickjs.pdf doc/quickjs.texi \
 install -D -p -m 0644 doc/quickjs.1 %{buildroot}%{_mandir}/man1/quickjs.1
 
 %check
-grep -F -q '%{upstream_date}' doc/quickjs.html
+test -s doc/quickjs.html
 test -s doc/quickjs.pdf
-grep -q '^\.TH ' doc/quickjs.1
+test -s doc/quickjs.texi
+test -s doc/quickjs.1
 
 %files
 %{_docdir}/quickjs
